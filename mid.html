@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+	
+<html>
+	
+		
+	<head>
+			<!--the meta tags, they allow the website to be found easier by clients by using those key words-->
+		<meta charset="UTF-8">
+		<meta name="description" content="history">	
+			
+			
+			<!--the title tag-->
+		<title>it's history!</title>
+		
+		<!--connects this to the css page-->
+		<link rel="stylesheet" type="text/css" href="azinP.css">
+		
+	</head>
+	
+	
+	<body>	
+		
+			<!--The banner picture <a> is a link <center> centers it-->
+			<a href="index.html"><center><img src="banner.png" alt="Its history!" style="width:380px;height:90px;"><center></a>
+		
+		<!--the navbar-->
+			<div id="navBar">
+			
+			<!--the sub divs allow them to be easly formated.-->
+				<div id="navBar1">
+					<a href="bas.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar2">
+					<a href="mid.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real2.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar3">
+					<a href="ides.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real3.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar4">
+					<a href="azinP.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real4.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+			
+			</div>
+			
+			
+			<!--initilises the images-->
+			<div id="slideshow">
+
+			<!--initilises the images-->
+<img class="mySlides" src="mid1.png" width="400px" height="175px">
+<img class="mySlides" src="mid2.png" width="400px" height="175px">
+
+			<!--initilises the arrows-->
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><image src="arrowL.png" width="40px" height="15px"></image></a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><image src="arrowR.png" width="40px" height="15px" ></image></a>
+
+			</div>
+<!--the java script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+			
+	
+			
+			
+		<!--the google maps plugin-->
+			<div id="map">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:200px;'><div id='gmap_canvas' style='height:200px;width:200px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https:/disclaimergenerator.net">disclaimer example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(8.73677922519648,154.99667324999996),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(8.73677922519648,154.99667324999996)});infowindow = new google.maps.InfoWindow({content:'<strong>Mid way</strong><br>papua new guinea<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			</div>
+						
+				<!--content-->
+			<div id="content">
+			<h1>Midway</h1>
+			<p>The Battle of Midway was a decisive naval battle in<br/>
+			the Pacific Theater of World War II.[7][8][9] Between 4<br/>
+			and 7 June 1942, only six months after Japan's attack on<br/>
+			Pearl Harbor and one month after the Battle of the Coral<br/>
+			Sea, the United States Navy under Admirals Chester Nimitz,<br/>
+			Frank Jack Fletcher, and Raymond A. Spruance decisively<br/>
+			defeated an attacking fleet of the Imperial Japanese Navy <br/>
+			under Admirals Isoroku Yamamoto, Chuichi Nagumo, and Nobutake<br/>
+			Kondo near Midway Atoll, inflicting devastating damage on the<br/>
+			Japanese fleet that proved irreparable. Military historian<br/>
+			John Keegan called it "the most stunning and decisive blow in<br/>
+			the history of naval warfare."[10] The operation, like the<br/>
+			earlier attack on Pearl Harbor, sought to eliminate the United<br/>
+			States as a strategic power in the Pacific, thereby giving <br/>
+			Japan a free hand in establishing its Greater East Asia<br/>
+			Co-Prosperity Sphere. The Japanese hoped another demoralizing<br/>
+			defeat would force the U.S. to capitulate in the Pacific War<br/>
+			and thus ensure Japanese dominance in the Pacific. Luring the<br/>
+			American aircraft carriers into a trap and occupying Midway was<br/>
+			part of an overall "barrier" strategy to extend Japan's defensive<br/>
+			perimeter, in response to the Doolittle air raid on Tokyo. This<br/>
+			operation was also considered preparatory for further attacks<br/>
+			against Fiji, Samoa, and Hawaii itself.</p> 	
+			</div>
+			
+			
+	</body>
+	
+	
+</html>

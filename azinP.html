@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+	
+<html>
+	
+		
+	<head>
+		<!--the meta tags, they allow the website to be found easier by clients by using those key words-->
+		<meta charset="UTF-8">
+		<meta name="description" content="history">
+			
+			
+			<!--the title tag-->
+		<title>it's history!</title>
+		
+		<!--connects this to the css page-->
+		<link rel="stylesheet" type="text/css" href="azinP.css">
+		
+	</head>
+	
+	
+	<body>	
+		
+			<!--The banner picture <a> is a link <center> centers it-->
+			<a href="index.html"><center><img src="banner.png" alt="Its history!" style="width:380px;height:90px;"><center></a>
+		
+		<!--the navbar-->
+			<div id="navBar">
+			
+			<!--the sub divs allow them to be easly formated.-->
+				<div id="navBar1">
+					<a href="bas.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar2">
+					<a href="mid.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real2.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar3">
+					<a href="ides.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real3.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar4">
+					<a href="azinP.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real4.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+			
+			</div>
+			
+			
+			<!--initilises the images-->
+			<div id="slideshow">
+
+			
+			<!--initilises the images-->
+<img class="mySlides" src="az1.png" width="400px" height="175px">
+<img class="mySlides" src="az2.png" width="400px" height="175px">
+
+			<!--initilises the arrows-->
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><image src="arrowL.png" width="40px" height="15px"></image></a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><image src="arrowR.png" width="40px" height="15px" ></image></a>
+
+			</div>
+<!--the java script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+			
+	
+			
+			
+		<!--the google maps plugin-->
+			<div id="map">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:200px;'><div id='gmap_canvas' style='height:200px;width:200px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsofusegenerator.net">terms of use generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(50.4629819,2.128469999999993),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.4629819,2.128469999999993)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>Azincourt, France<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			</div>
+						
+				<!--content-->
+			<div id="content">
+			<h1>Azincourt</h1>
+			<p>The Battle of Agincourt (/ˈæʒɪnkʊr/; in<br/>
+			 French, Azincourt French pronunciation: ​[azɛ̃kuʁ]),<br/>
+			was a major English victory in the Hundred <br/>
+			Years' War.[a] The battle took place on Friday,<br/>
+			25 October 1415 (Saint Crispin's Day), near<br/>
+			Azincourt,in northern France.[5][b] Henry V'<br/>
+			victory at Agincourt, against a numerically<br/>
+			superior French army, crippled France and<br/>
+			started a new period in the war during<br/>
+			which Henry V married the French king's <br/>
+			daughter, and their son, later Henry VI <br/>
+			of England and Henry II of France, was made<br/>
+			heir to the throne of France as well as of <br/>
+			England. Henry V led his troops into battle and<br/> 
+			participated in hand-to-hand fighting. The <br/>
+			French king of the time, Charles VI, did not<br/> 
+			command the French armyhimself as he suffered<br/>
+			from severe psychotic illnesses with moderate<br/>
+			mental incapacitation. Instead, the French<br/> 
+			were commanded by Constable Charles d'Albret<br/> 
+			and various prominent French noblemen of the<br/> Armagnac party.</p> 	
+			</div>
+			
+			
+	</body>
+	
+	
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+	
+<html>
+	
+		
+	<head>
+		<!--the meta tags, they allow the website to be found easier by clients by using those key words-->
+		<meta charset="UTF-8">
+		<meta name="description" content="history">
+		
+		
+			<!--the title tag-->
+		<title>it's history!</title>
+		
+		<!--connects this to the css page-->
+		<link rel="stylesheet" type="text/css" href="azinP.css">
+		
+	</head>
+	
+	
+	<body>	
+		
+			<!--The banner picture <a> is a link <center> centers it-->
+			<a href="index.html"><center><img src="banner.png" alt="Its history!" style="width:380px;height:90px;"><center></a>
+		
+		<!--the navbar-->
+			<div id="navBar">
+			
+			<!--the sub divs allow them to be easly formated.-->
+				<div id="navBar1">
+					<a href="bas.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar2">
+					<a href="mid.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real2.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar3">
+					<a href="test.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real3.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar4">
+					<a href="azinP.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real4.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+			
+			</div>
+			
+			
+			<!--initilises the images-->
+			<div id="slideshow">
+
+			<!--initilises the images-->
+<img class="mySlides" src="ides1.png" width="400px" height="175px">
+<img class="mySlides" src="ides2.png" width="400px" height="175px">
+
+		<!--initilises the arrows-->
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><image src="arrowL.png" width="40px" height="15px"></image></a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><image src="arrowR.png" width="40px" height="15px" ></image></a>
+
+			</div>
+<!--the java script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+			
+	
+			
+			
+		<!--the google maps plugin-->
+			<div id="map">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:200px;'><div id='gmap_canvas' style='height:200px;width:200px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://disclaimergenerator.net">disclaimer generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(41.9027835,12.496365500000024),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.9027835,12.496365500000024)});infowindow = new google.maps.InfoWindow({content:'<strong>Ides of March</strong><br>rome<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			</div>
+						
+				<!--content-->
+			<div id="content">
+			<h1>Ides of March</h1>
+			<p>The Ides of March (Latin: Idus Martiae, Late Latin:<br/>
+			Idus Martii)[1] is a day on the Roman calendar that<br/>
+			corresponds to 15 March. It was marked by several<br/>
+			religious observances and became notorious as the date<br/>
+			of the assassination of Julius Caesar in 44 BC. The<br/>
+			death of Caesar made the Ides of March a turning point<br/>
+			in Roman history, as one of the events that marked the<br/>
+			transition from the historical period known as the<br/>
+			Roman Republic to the Roman Empire.[2] Although March<br/>
+			(Martius) was the third month of the Julian calendar,<br/>
+			in the oldest Roman calendar it was the first month<br/>
+			of the year. The holidays observed by the Romans from<br/>
+			the first through the Ides often reflect their origin<br/>
+			as new year celebrations.[citation needed]</p> 	
+			</div>
+			
+			
+	</body>
+	
+	
+</html>

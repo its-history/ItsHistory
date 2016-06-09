@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+	
+<html>
+	
+		
+	<head>
+		<!--the meta tags, they allow the website to be found easier by clients by using those key words-->
+		<meta charset="UTF-8">
+		<meta name="description" content="history">
+		
+		
+			<!--the title tag-->
+		<title>it's history!</title>
+		
+		<!--connects this to the css page-->
+		<link rel="stylesheet" type="text/css" href="azinP.css">
+		
+	</head>
+	
+	
+	<body>	
+		
+			<!--The banner picture <a> is a link <center> centers it-->
+			<a href="index.html"><center><img src="banner.png" alt="Its history!" style="width:380px;height:90px;"><center></a>
+		
+		<!--the navbar-->
+			<div id="navBar">
+			
+			<!--the sub divs allow them to be easly formated.-->
+				<div id="navBar1">
+					<a href="bas.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar2">
+					<a href="mid.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real2.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar3">
+					<a href="ides.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real3.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+				
+				<div id="navBar4">
+					<a href="azinP.html"><image src="curtain_rods.png"  onmouseover="this.src='curtain_rods_real4.png'" onmouseout="this.src='curtain_rods.png'" style="width:150px;height:80px;"></a>
+				</div>
+			
+			</div>
+			
+			
+			<!--initilises the images-->
+			<div id="slideshow">
+
+			<!--initilises the images-->
+<img class="mySlides" src="bas1.png" width="400px" height="175px">
+<img class="mySlides" src="bas2.png" width="400px" height="175px">
+
+			<!--initilises the arrows-->
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><image src="arrowL.png" width="40px" height="15px"></image></a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><image src="arrowR.png" width="40px" height="15px" ></image></a>
+
+			</div>
+<!--the java script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+			
+	
+			
+			
+		<!--the google maps plugin-->
+			<div id="map">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:200px;'><div id='gmap_canvas' style='height:200px;width:200px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://disclaimergenerator.net">disclaimer generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(48.8530778,2.3695500999999695),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.8530778,2.3695500999999695)});infowindow = new google.maps.InfoWindow({content:'<strong>Bastille</strong><br>bastille<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			</div>
+						
+				<!--content-->
+			<div id="content">
+			<h1>Bastille</h1>
+			<p>The Bastille (French pronunciation: ​[bastij])<br/> 
+			was a fortress in Paris, known formally as the <br/>
+			Bastille Saint-Antoine. It played an important role<br/>
+			in the internal conflicts of France and for most of<br/>
+			its history was used as a state prison by the kings of<br/>
+			France. It was stormed by a crowd on 14 July 1789 in<br/>
+			the French Revolution, becoming an important symbol<br/>
+			for the French Republican movement, and was later<br/>
+			demolished and replaced by the Place de la Bastille.<br/>
+			The Bastille was built to defend the eastern<br/>
+			approach to the city of Paris from the English threat<br/>
+			in the Hundred Years' War. Initial work began in 1357,<br/>
+			but the main construction occurred from 1370 onwards,<br/>
+			creating a strong fortress with eight towers that<br/>
+			protected the strategic gateway of the Porte<br/>
+			Saint-Antoine on the eastern edge of Paris. The <br/>
+			innovative design proved influential in both France and<br/>
+			England and was widely copied. The Bastille figured<br/>
+			prominently in France's domestic conflicts, including<br/>
+			the fighting between the rival factions of the Burgundians<br/>
+			and the Armagnacs in the 15th century, and the Wars of<br/>
+			Religion in the 16th. The fortress was declared a state<br/>
+			prison in 1417; this role was expanded first under the<br/>
+			English occupiers of the 1420s and 1430s, and then under <br/>
+			Louis XI in the 1460s. The defences of the Bastille were<br/>
+			fortified in response to the English and Imperial threat<br/>
+			during the 1550s, with a bastion constructed to the east of<br/>
+			the fortress. The Bastille played a key role in the rebellion<br/>
+			of the Fronde and the battle of the faubourg Saint-Antoine,<br/>
+			which was fought beneath its walls in 1652.</p> 	
+			</div>
+			
+			
+	</body>
+	
+	
+</html>
